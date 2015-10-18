@@ -68,3 +68,13 @@ body {
     vertical-align: middle;
     /*float: right;*/
 }
+
+.filter {
+  margin-left: 6em;
+    margin-top: 12em;
+    text-emphasis: "strong";
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    /*float: right;*/
+}
