@@ -55,21 +55,21 @@
                 <!-- Google Map goes here -->
                 <script src="http://maps.googleapis.com/maps/api/js"></script>
                 <script>
-                function initialize() {
-                  var mapProp = {
-                    center:new google.maps.LatLng(51.508742,-0.120850),
-                    zoom:5,
-                    mapTypeId:google.maps.MapTypeId.ROADMAP
-                  };
-                  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-                }
-                google.maps.event.addDomListener(window, 'load', initialize);
+                    function initialize() {
+                    var mapProp = {
+                        center: new google.maps.LatLng(51.508742,-0.120850),
+                        zoom: 5,
+                        mapTypeId: google.maps.MapTypeId.ROADMAP
+                    };
+                    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+                    }
+                    google.maps.event.addDomListener(window, 'load', initialize);
                 </script>
                 <div id="googleMap" style="width:500px;height:380px;"></div>
 
             </div>
             <video autoplay loop class="fillWidth">
-                <source src="/MP4/Carmela.mp4" type="video/mp4" class="vidd"/>Your browser does not support the video tag. I suggest you upgrade your browser.
+                <source src="/MP4/Carmela.mp4" type="video/mp4"/>Your browser does not support the video tag. I suggest you upgrade your browser.
                 <!-- <source src="/WEBM/New-York-Jam.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser. -->
             </video>
             <div class="poster hidden">

@@ -9,8 +9,8 @@ $(document).ready(function() {
     function changeBackground() {
         currentBackground++;
         if(currentBackground > 3) currentBackground = 0;
-        var src = backgrounds[currentBackground];
-        $('.video-container').find('.fillWidth').find('.vidd').attr("src", src);
+        var neuSrc = backgrounds[currentBackground];
+        $('.video-container').find('.fillWidth').find('source').src = neuSrc;
         setTimeout(changeBackground, 12000);
     }
     setTimeout(changeBackground, 12000);
