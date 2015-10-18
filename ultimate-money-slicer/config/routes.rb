@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   get 'welcome/slice'
-
   get 'welcome/homepage'
 
   #resources: 'slice'
