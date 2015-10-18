@@ -10,7 +10,7 @@ $(document).ready(function() {
         currentBackground++;
         if(currentBackground > 3) currentBackground = 0;
         $('body').find('.homepage-hero-module').find('.video-container').find('video').find('source').src = backgrounds[currentBackground];
-        setTimeout(changeBackground(), 500);
+        changeBackground();
     }
     setTimeout(changeBackground(), 500);
     //alert("I'm working!");

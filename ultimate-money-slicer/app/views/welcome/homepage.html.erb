@@ -64,20 +64,36 @@
                     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
                     }
                     google.maps.event.addDomListener(window, 'load', initialize);
-                </script>
-                <div id="googleMap" style="width:500px;height:380px;"></div>
 
+                    var script = document.createElement('script');
+
+                    script.src = 'http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.geojsonp';
+                    document.getElementsByTagName('head')[0].appendChild(script);
+
+
+
+
+
+                </script>
+                <div id="googleMap" style="width:500px; height:500px; padding: 20px"></div>
             </div>
+
             <div class="bilter">
                 <!-- Product picture goes here -->
-                <p>The most purchased item in your area <br />
-                    within the past (week): Scarleton 3 Front Waisted Purse <br />
-                    Current price: $36.00 <br />
-                    Lowest price within the past (week): $30.00
-                </p>
+                <div class="description-wrapper">
+                    <img src="/purse.jpg" alt="" class="description-image">
 
+
+                    <p class="description-text">The most purchased item in your area
+                        within the past (week): <br>
+                        Scarleton 3 Front Waisted Purse <br>
+                        Current price: $36.00 <br>
+                        Lowest price within the past (week): $30.00 <br>
+                    </p>
+                </div>
                 <!-- Picture should go here -->
             </div>
+
             <video autoplay loop class="fillWidth">
                 <source src="/MP4/Going-Places.mp4" type="video/mp4"/>Your browser does not support the video tag. I suggest you upgrade your browser.
                 <!-- <source src="/WEBM/New-York-Jam.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser. -->
@@ -85,6 +101,7 @@
             <div class="poster hidden">
                 <img src="/Snapshots/New-York-Jam.jpg" alt="">
             </div>
+
         </div>
     </div>
     <!-- jQuery -->

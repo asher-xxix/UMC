@@ -71,7 +71,7 @@ body {
 
 .filter {
     margin-left: 6em;
-    margin-top: 12em;
+    margin-top: 10em;
     text-emphasis: "strong";
     text-align: justify;
     color: white;
@@ -85,16 +85,50 @@ body {
 }
 
 .bilter {
-    margin-right: 10em;
-    margin-top: 12em;
-    text-emphasis: "strong";
-    text-align: center;
-    color: white;
-    vertical-align: right;
+
+    margin-left: auto;
+    margin-right: 18em;
+    margin-top: 10em;
+    margin-bottom: 8em;
+
+    border-radius: 25px;
+    padding: 20px;
+    width: 500px;
+    height: 500px;
+
+    /*vertical-align: right;*/
     /*float: right;*/
     z-index: 100;
-    position: absolute;
-    /*background: rgba(0, 0, 0, 0.4);*/
-    width: 100%;
+    position: relative;
+    background: rgba(0, 0, 0, 0.4);
+    /*width: 100%;*/
 
+}
+
+.description-wrapper {
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    /*position: absolute;*/
+    vertical-align: bottom;
+    /*bottom:  0;*/
+}
+
+.description-text {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: bottom;
+    bottom: 0;
+    margin-top: 1em;
+    text-align: left;
+}
+
+.description-image {
+    shape-inside: auto;
+    max-width: 40%;
+    max-height: 20%;
 }
