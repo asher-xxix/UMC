@@ -1,8 +1,8 @@
 require 'test_helper'
 
 class WelcomeControllerTest < ActionController::TestCase
-  test "should get homepage" do
-    get :homepage
+  test "should get slice" do
+    get :slice
     assert_response :success
   end
 
