@@ -60,11 +60,11 @@ body {
     width: 100%;
 }
 
-.filter {
-    margin-top: 12em;
+.login-link {
+    /*margin-top: 12em;*/
     text-emphasis: "strong";
     text-align: center;
     color: white;
     vertical-align: middle;
-    float: right;
+    /*float: right;*/
 }
