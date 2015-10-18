@@ -43,7 +43,7 @@
                 <!-- <a class="navbar-brand" href="#">Start Bootstrap</a> -->
             </div>
             <h1 class="login-link"><%= link_to "Sign in with Slice", @auth_url %><h1>
-                
+
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
@@ -70,6 +70,32 @@
 
                     script.src = 'http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.geojsonp';
                     document.getElementsByTagName('head')[0].appendChild(script);
+
+                    map.data.setStyle(function(feature) {
+                        var magnitude = feature.getProperty('mag');
+                        return {
+                            icon: getCircle(magnitude)
+                        };
+                    });
+
+                    function getCircle(magnitude) {
+                        var circle = {
+                            path: google.maps.SymbolPath.CIRCLE,
+                            fillColor: 'red',
+                            fillOpacity: .2,
+                            scale: Math.pow(2, magnitude) / 2,
+                            strokeColor: 'white',
+                            strokeWeight: .5
+                        };
+                        return circle;
+                    }
+
+                    function eqfeed_callback(results) {
+                        map.data.addGeoJson(results);
+                    }
+
+                    google.maps.event.addDomListener(window, 'load', initialize);
+
 
 
 
