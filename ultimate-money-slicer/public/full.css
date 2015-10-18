@@ -73,7 +73,7 @@ body {
     margin-left: 6em;
     margin-top: 12em;
     text-emphasis: "strong";
-    text-align: center;
+    text-align: justify;
     color: white;
     vertical-align: middle;
     /*float: right;*/
@@ -81,4 +81,20 @@ body {
     position: absolute;
     /*background: rgba(0, 0, 0, 0.4);*/
     width: 100%;
+
+}
+
+.bilter {
+    margin-right: 10em;
+    margin-top: 12em;
+    text-emphasis: "strong";
+    text-align: center;
+    color: white;
+    vertical-align: right;
+    /*float: right;*/
+    z-index: 100;
+    position: absolute;
+    /*background: rgba(0, 0, 0, 0.4);*/
+    width: 100%;
+
 }
