@@ -7,7 +7,6 @@ class SliceController < ApplicationController
 
         access_token = oauth.authenticate! auth_code
 
-
         @client = Slice::Client.new(access_token: access_token.token)
         @client.list_items
         @client.list_orders
@@ -18,10 +17,6 @@ class SliceController < ApplicationController
         @client.list_items(limit: 3, offset: 10).status
         @client.list_items(limit: 3, offset: 10).headers
         @client.list_items(limit: 3, offset: 10).body
-
-
-
-        redirect_to('http://localhost:3000')
 
     end
 end
